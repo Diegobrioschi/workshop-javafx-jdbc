@@ -170,6 +170,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 			updateTasbleView();
 			}
 			catch (DbIntegrityException e) {
+				e.printStackTrace();
 				Alerts.showAlert("Error removing object", null, e.getMessage(), AlertType.ERROR);
 			}
 		}

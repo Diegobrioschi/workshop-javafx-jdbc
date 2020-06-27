@@ -91,4 +91,12 @@ public class Utils {
 			}
 		});
 	}
+	
+	public static Double tryPaserToDouble(String srt) {
+		try {
+			return Double.parseDouble(srt);
+		} catch (NumberFormatException e) {
+			return null;
+		}
+	}
 }
